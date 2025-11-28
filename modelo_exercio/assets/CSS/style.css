@@ -52,6 +52,7 @@ form button {
   font-weight: 700;
   height: 50px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 form button:hover {
