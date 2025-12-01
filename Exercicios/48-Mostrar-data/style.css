@@ -46,7 +46,7 @@ form input :focus {
 
 form button {
   border: none;
-  background: var(--primary-color);
+  background: var (--primary-color);
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -59,21 +59,6 @@ form button:hover {
     background: var(--primary-color-darker);
 }
 
-.resultado {
+#saida {
   text-align: center;
 }
-
-#obese {
-  color: red;
-
-}
-#obese3 {
-  color: white;
-  animation: piscar 0.5s infinite alternate;
-}
-
-@keyframes piscar {
-  from {background-color: black;}
-  to {background-color: red;}
-}
-
