@@ -1,9 +1,10 @@
-const numeros = [1,2,3,4,5,6,7,8,9,10];
-
-for (let numero of numeros) {
-    if (numero === 1000000000){
-        break;
+function retornahora(data) {
+    if (!(data instanceof Date)) {
+        console.log(`${data} Não é instância de date`)
+    } else {
+        console.log(`${data} é instância de date`)
     }
-
-    console.log(numero)
 }
+
+retornahora(new Date());
+retornahora(55);
