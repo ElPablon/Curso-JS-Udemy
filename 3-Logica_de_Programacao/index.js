@@ -1,10 +1,23 @@
-function retornahora(data) {
-    if (!(data instanceof Date)) {
-        console.log(`${data} Não é instância de date`)
-    } else {
-        console.log(`${data} é instância de date`)
-    }
+function mostraHora(){
+    let data = new Date();
+
+    return data.toLocaleTimeString('pt-BR',{hour12 : false});
 }
 
-retornahora(new Date());
-retornahora(55);
+console.log(mostraHora());
+
+///function funcaoDoInterval(){
+///    console.log(mostraHora());
+///}
+
+///setInterval(funcaoDoInterval, 1000);
+
+const timer = setInterval(function(){
+    console.log(mostraHora());
+}, 1000);
+
+
+//só executa uma vez
+setTimeout (function() {
+    clearInterval(timer);
+}, 10000)
